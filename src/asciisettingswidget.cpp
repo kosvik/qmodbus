@@ -1,6 +1,6 @@
 #include "serialsettingswidget.h"
 #include "asciisettingswidget.h"
-#include "ui_serialsettingswidget.h"
+#include "forms/ui_serialsettingswidget.h"
 #include "modbus.h"
 
 AsciiSettingsWidget::AsciiSettingsWidget(QWidget *parent) :

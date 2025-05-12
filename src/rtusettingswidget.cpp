@@ -1,6 +1,6 @@
 #include "serialsettingswidget.h"
 #include "rtusettingswidget.h"
-#include "ui_serialsettingswidget.h"
+#include "forms/ui_serialsettingswidget.h"
 #include "modbus.h"
 
 RtuSettingsWidget::RtuSettingsWidget(QWidget *parent) :

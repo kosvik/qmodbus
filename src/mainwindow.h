@@ -29,7 +29,7 @@
 #include <QTimer>
 
 #include "modbus.h"
-#include "ui_about.h"
+#include "forms/ui_about.h"
 
 
 #define SENT		0

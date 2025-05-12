@@ -1,5 +1,5 @@
 #include "tcpipsettingswidget.h"
-#include "ui_tcpipsettingswidget.h"
+#include "forms/ui_tcpipsettingswidget.h"
 #include "modbus-tcp.h"
 #include <QIntValidator>
 #include <QDebug>

@@ -1,3 +1,4 @@
+
 QModBusTcp
 ==========
 Copyright (c) 2013      Karl-Heinz Reichel, ing-büro reichel-langer
@@ -38,7 +39,7 @@ traffic on the bus.
 Requirements
 ------------
 
-* Qt5
+* Qt6
 * GCC
 
 

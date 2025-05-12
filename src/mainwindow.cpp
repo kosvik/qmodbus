@@ -33,7 +33,7 @@
 #include "modbus.h"
 #include "modbus-private.h"
 
-#include "ui_mainwindow.h"
+#include "forms/ui_mainwindow.h"
 
 
 const int DataTypeColumn = 0;

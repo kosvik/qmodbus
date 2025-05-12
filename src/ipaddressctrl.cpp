@@ -1,6 +1,6 @@
 #include <QStringList>
 #include "ipaddressctrl.h"
-#include "ui_ipaddressctrl.h"
+#include "forms/ui_ipaddressctrl.h"
 
 IPAddressCtrl::IPAddressCtrl(QWidget *parent) :
     QWidget(parent),

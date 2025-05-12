@@ -54,7 +54,9 @@
 //
 
 #include "QtCore/qobject.h"
-#include "QtCore/qt_windows.h"
+//#include "QtCore/qt_windows.h"
+
+using Qt::HANDLE;
 
 QT_BEGIN_NAMESPACE
 

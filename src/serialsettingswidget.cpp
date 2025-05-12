@@ -1,7 +1,7 @@
 #include <QSettings>
 #include "qextserialenumerator.h"
 #include "serialsettingswidget.h"
-#include "ui_serialsettingswidget.h"
+#include "forms/ui_serialsettingswidget.h"
 
 SerialSettingsWidget::SerialSettingsWidget(QWidget *parent) :
 	QWidget(parent),
@@ -45,16 +45,16 @@ int SerialSettingsWidget::setupModbusPort()
 	ui->stopBits->setCurrentIndex( ui->stopBits->findText( s.value( "serialstopbits" ).toString() ) );
 	ui->dataBits->setCurrentIndex( ui->dataBits->findText( s.value( "serialdatabits" ).toString() ) );
 
-	connect( ui->serialPort, SIGNAL( currentIndexChanged( int ) ),
-			this, SLOT( changeSerialPort( int ) ) );
-	connect( ui->baud, SIGNAL( currentIndexChanged( int ) ),
-			this, SLOT( changeSerialPort( int ) ) );
-	connect( ui->dataBits, SIGNAL( currentIndexChanged( int ) ),
-			this, SLOT( changeSerialPort( int ) ) );
-	connect( ui->stopBits, SIGNAL( currentIndexChanged( int ) ),
-			this, SLOT( changeSerialPort( int ) ) );
-	connect( ui->parity, SIGNAL( currentIndexChanged( int ) ),
-			this, SLOT( changeSerialPort( int ) ) );
+    connect( ui->serialPort, SIGNAL( currentIndexChanged(int) ),
+            this, SLOT( changeSerialPort(int) ) );
+    connect( ui->baud, SIGNAL( currentIndexChanged(int) ),
+            this, SLOT( changeSerialPort(int) ) );
+    connect( ui->dataBits, SIGNAL( currentIndexChanged(int) ),
+            this, SLOT( changeSerialPort(int) ) );
+    connect( ui->stopBits, SIGNAL( currentIndexChanged(int) ),
+            this, SLOT( changeSerialPort(int) ) );
+    connect( ui->parity, SIGNAL( currentIndexChanged(int) ),
+            this, SLOT( changeSerialPort(int) ) );
 
 	changeSerialPort( portIndex );
 	return portIndex;
@@ -120,7 +120,6 @@ void SerialSettingsWidget::changeSerialPort( int )
 		emit connectionError( tr( "No serial port found" ) );
 	}
 }
-
 
 void SerialSettingsWidget::enableGuiItems(bool checked)
 {
